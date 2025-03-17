@@ -75,3 +75,11 @@ nav a {
         grid-column: span 2;
     }
 }
+
+/*footer*/
+footer{
+    background-color: #d9043d;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+}
