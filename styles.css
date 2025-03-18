@@ -16,6 +16,9 @@ header h1{
     color: #97bf04;
     margin: 0;
 }
+header ul{
+    display: inline;
+}
 
 /*naviation*/
 nav{
@@ -23,37 +26,42 @@ nav{
     text-align: center;
     padding: 0.5rem 0;
 }
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
 nav a {
-    display: inline-block;
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 1rem;
-    border: 2px solid #97bf04;
     margin: 0.5rem;
 }
+
 /*images style*/
-.photo-gallery {
+#gallery-container {
     display: grid;
     gap: 1rem;
     padding: 1rem;
 }
-.photo-gallery img {
+#gallery-container img {
     width: 100%;
     max-width: 650px;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-bottom: 10px solid #97bf04;
+    border-bottom: 0.625rem solid #97bf04;
 }
-.photo-gallery .photo {
+#gallery-container figure {
     text-align: center;
     background: white;
     padding: 1rem;
 }
 /*responsive design*/
 @media (max-width: 768px) {
-    .photo-gallery {
+    #gallery-container {
         grid-template-columns: 1fr;
     }
     nav a {
@@ -63,15 +71,15 @@ nav a {
     }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
-    .photo-gallery {
+    #gallery-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (min-width: 1000px) {
-    .photo-gallery {
+    #gallery-container {
         grid-template-columns: repeat(3, 1fr);
     }
-    .photo-gallery .photo:last-child {
+    .gallery-container .photo:last-child {
         grid-column: span 2;
     }
 }
