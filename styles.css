@@ -60,7 +60,7 @@ nav a {
     border-bottom: 0.625rem solid #97bf04;
 }
 #gallery-container figure {
-    text-align: center;
+    text-align: left;
     background: white;
     padding: 1rem;
 }
@@ -105,7 +105,7 @@ nav a {
     #gallery-container {
         grid-template-columns: repeat(3, 1fr);
     }
-    .gallery-container .photo:last-child {
+    :last-child {
         grid-column: span 2;
     }
 }
