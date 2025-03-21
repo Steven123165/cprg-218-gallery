@@ -12,9 +12,14 @@ header{
     text-align: center;
     padding: 1rem 0;
 }
+
+header.header-container {padding-bottom: 0;}
 header h1{
     color: #97bf04;
     margin: 0;
+}
+h2{
+    text-align: center;
 }
 header ul{
     display: inline;
@@ -24,6 +29,7 @@ header ul{
 nav{
     background-color: #d9043d;
     text-align: center;
+    margin-top: 20px;
     padding: 0.5rem 0;
 }
 nav ul{
@@ -35,7 +41,6 @@ nav ul{
 nav a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
     padding: 1rem;
     margin: 0.5rem;
 }
